@@ -13,5 +13,5 @@ mongoose.connect(process.env.MONGO_URI)
     .catch(err => console.log(err));
 
 app.use("/auth", require("./routes/authRoutes"));
-
+app.use("/services", require("./routes/serviceRoutes"));
 app.listen(5000, ()=> console.log("Server running on 5000"));
