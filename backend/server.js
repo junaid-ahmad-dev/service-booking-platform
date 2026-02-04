@@ -14,4 +14,5 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use("/auth", require("./routes/authRoutes"));
 app.use("/services", require("./routes/serviceRoutes"));
+app.use("/booking", require("./routes/bookingRoutes"));
 app.listen(5000, ()=> console.log("Server running on 5000"));
